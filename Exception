@@ -1,0 +1,12 @@
+import subprocess
+subprocess.run(["ls","-l","README.md"])
+
+try: 
+    #sudo="sudo"
+    command="sudo fdisk"
+    commandArgument="-l"
+    print(f'Gathering active process information with command: {command} {commandArgument}')
+    subprocess.run([command,commandArgument])
+
+except:
+    print("Contact admin")
